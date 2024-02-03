@@ -1,0 +1,14 @@
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/bin/Debug/net8.0/Game_VD
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/bin/Debug/net8.0/Game_VD.deps.json
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/bin/Debug/net8.0/Game_VD.runtimeconfig.json
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/bin/Debug/net8.0/Game_VD.dll
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/bin/Debug/net8.0/Game_VD.pdb
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/Game_VD.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/Game_VD.AssemblyInfoInputs.cache
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/Game_VD.AssemblyInfo.cs
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/Game_VD.csproj.CoreCompileInputs.cache
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/Game_VD.dll
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/refint/Game_VD.dll
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/Game_VD.pdb
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/Game_VD.genruntimeconfig.cache
+/Users/ivogergov/Projects/TUSofia/VasilDrumev/Game/Game_VD/obj/Debug/net8.0/ref/Game_VD.dll
