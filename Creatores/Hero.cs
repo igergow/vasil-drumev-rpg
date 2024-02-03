@@ -18,7 +18,12 @@ abstract class Hero : Creator
 
     public override void Attack(Creator opponent)
     {
-        Experience += (int) Damage;
+        var item = new Sword("Sword", new Dictionary<string, object>{
+            {"Damage", 10},
+            {"AttackSpeed", 1.5}
+        });
+        item.Use();
+        Experience += (int) Damage + (int) item.Stats["Damage"];
         base.Attack(opponent);
     }
 
