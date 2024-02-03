@@ -1,6 +1,6 @@
 class Sword : Item
 {
-    public Sword(string name, Dictionary<string, Object> stats) 
+    public Sword(string name, Dictionary<ItemAttributesEnum, Object> stats) 
     : base(ItemTypeEnum.Weapon, name, stats)
     {
     }
