@@ -3,14 +3,17 @@
 Console.WriteLine("Моля изберете герой:");
 Console.WriteLine("1. Джудже");
 Console.WriteLine("2. Елф");
+Console.WriteLine("3. Човек");
 
 var heroType = int.Parse(Console.ReadLine());
 
 Hero hero;
 if (heroType == 1) {
     hero = new Dwarf("Джудже");
-} else {
+} else if (heroType == 2) {
     hero = new Elf("Елф");
+} else {
+    hero = new Human("Човек");
 }
 
 Console.Clear();
