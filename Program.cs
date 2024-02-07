@@ -1,5 +1,5 @@
 ﻿using System.Threading;
-
+Console.Clear();
 Console.WriteLine("Моля изберете герой:");
 Console.WriteLine("1. Джудже");
 Console.WriteLine("2. Елф");
@@ -59,19 +59,14 @@ for (int i = 0; i < 10; i++)
     var y = Console.CursorTop;
     if (monster.IsAlive())
     {
-        // Console.SetCursorPosition(0, hero.BattleNumber + 3);
-        Console.WriteLine($"{monster.Name} wins!");
-        // Console.SetCursorPosition(x, y);
+        Tools.PrintBattleInfo($"{monster.Name} wins!");
         break;
     }
     else
     {
         hero.LevelUp();
-        // Console.SetCursorPosition(0, hero.BattleNumber + 3);
-        Console.WriteLine($"{hero.Name} gained {hero.Experience}/{hero.NextLevelExperience} XP!");
+        Tools.PrintBattleInfo($"{hero.Name} gained {hero.Experience}/{hero.NextLevelExperience} XP!");
         Thread.Sleep(1000);
-        // Console.SetCursorPosition(0, hero.BattleNumber + 3);
-        Console.WriteLine($"{hero.Name} wins!");
-        // Console.SetCursorPosition(x, y);
+        Tools.PrintBattleInfo($"{hero.Name} has {hero.Health} health left!");
     }
 }

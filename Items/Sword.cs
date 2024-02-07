@@ -7,6 +7,6 @@ class Sword : Item
 
     public override void Use()
     {
-        Console.WriteLine($"You have used the sword {this.Name}");
+        Tools.PrintBottomLeftCorner($"You have used the sword {this.Name}");
     }
 }

@@ -15,8 +15,7 @@ abstract class Creator {
         Defense = defense;
         AttackSpeed = 1;
         DefaultHealth = health;
-        // Console.SetCursorPosition(0, 3);
-        Console.WriteLine($"A new creator has been created: {Name}");
+        Tools.PrintBattleInfo($"A new creator has been created: {Name}");
         Thread.Sleep(500);
     }
 
@@ -35,9 +34,6 @@ abstract class Creator {
         var oldHealth = opponent.Health;
         opponent.Health -= Damage;
         var h = opponent.Health < 0 ? 0 : opponent.Health;
-        // Get cursor position
-        var x = Console.CursorLeft;
-        var y = Console.CursorTop;
 
         Creator selectedHero = this;
         Creator opponentHero = opponent;
@@ -74,14 +70,9 @@ abstract class Creator {
         }
         health_bar2 += $"] {opponentHero.Name}";
 
-        // Console.SetCursorPosition((Console.WindowWidth - 22 - selectedHero.Name.Length - 1 < 0) ? 0 : Console.WindowWidth - 22 - selectedHero.Name.Length - 1, 1);
-        Console.WriteLine(health_bar);
-        // Console.SetCursorPosition(0, 1);
-        Console.WriteLine(health_bar2);
-        // Console.SetCursorPosition(x, y);
+        Tools.PrintTopLeftCorner(health_bar);
+        Tools.PrintTopRightCorner(health_bar2);
 
-        // Console.SetCursorPosition(0, ((Hero) selectedHero).BattleNumber + 3);
-        Console.WriteLine($"{Name} attacks {opponent.Name}!");
-        // Console.SetCursorPosition(x, y);
+        Tools.PrintBattleInfo($"{selectedHero.Name} attacks {opponent.Name} ({h}/{oldHealth}) with {Damage} dmg!");
     }
 }

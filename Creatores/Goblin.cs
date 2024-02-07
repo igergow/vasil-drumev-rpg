@@ -3,8 +3,7 @@ class Goblin : Monster {
     : base(name, 190, 5)
     {
         AttackSpeed = 2;
-        // Console.SetCursorPosition(0, 3);
-        Console.WriteLine($"A new goblin has been created: {name}");
+        Tools.PrintBattleInfo($"A new goblin has been created: {Name}");
         Thread.Sleep(500);
     }
 }
