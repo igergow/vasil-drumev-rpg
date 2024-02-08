@@ -4,7 +4,7 @@ abstract class Monster : Creature
         : base(name, health, damage, 0)
     {
         Tools.PrintBattleInfo($"A new monster has been created: {Name}");
-        Thread.Sleep(2000);
+        Thread.Sleep(500);
     }
 
     public override string ToString()

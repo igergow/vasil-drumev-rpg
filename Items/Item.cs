@@ -11,5 +11,16 @@ public abstract class Item
         Attributes = stats;        
     }
 
+    public override string ToString()
+    {
+        string result = "";
+        result += $"Item: {Name} ({itemTypeEnum}) ";
+        foreach (var attr in Attributes)
+        {
+            result += $" {attr.Key}: {attr.Value} ";
+        }
+        return result;
+    }
+
     public abstract void Use();
 }
