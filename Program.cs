@@ -15,6 +15,14 @@ if (heroType == 1) {
 } else {
     hero = new Human("Човек");
 }
+var attrs = new Dictionary<ItemAttributesEnum, object>();
+attrs.Add(ItemAttributesEnum.Damage, 10);
+attrs.Add(ItemAttributesEnum.AttackSpeed, 0.5);
+attrs.Add(ItemAttributesEnum.Durability, 15);
+
+var s = new Sword("Doombringer", attrs);
+
+s.Use();
 
 Console.Clear();
 

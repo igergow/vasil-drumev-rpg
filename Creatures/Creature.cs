@@ -1,5 +1,3 @@
-using System.Security.Principal;
-
 abstract class Creature {
     public string Name { get; private set; }
     public double Health { get; set; }

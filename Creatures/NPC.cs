@@ -7,6 +7,13 @@ class NPC : Creature
 
     public void Talk()
     {
-        
+        Tools.PrintBattleInfo("Просто си говоря!");
+        Thread.Sleep(5000);
+    }
+
+    public override void Attack(Creature opponent)
+    {
+        Tools.PrintBattleInfo($"Howdy, ${opponent.Name}! I'm peace maker!");
+        Thread.Sleep(5000);
     }
 }
