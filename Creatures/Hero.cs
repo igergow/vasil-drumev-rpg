@@ -1,4 +1,4 @@
-abstract class Hero : Creator
+abstract class Hero : Creature
 {
     public int BattleNumber { get; set; }
     public int Level { get; set; }
@@ -12,17 +12,12 @@ abstract class Hero : Creator
         Level = 1;
         Experience = 0;
         Tools.PrintBattleInfo($"A new hero has been created: {Name}");
-        Thread.Sleep(500);
+        Thread.Sleep(2000);
     }
 
-    public override void Attack(Creator opponent)
+    public override void Attack(Creature opponent)
     {
-        var item = new Sword("Sword", new Dictionary<ItemAttributesEnum, object>{
-            {ItemAttributesEnum.Damage, 10},
-            {ItemAttributesEnum.AttackSpeed, 1.5}
-        });
-        item.Use();
-        Experience += (int) Damage + (int) item.Stats[ItemAttributesEnum.Damage];
+        Experience += (int) Damage;
         base.Attack(opponent);
     }
 
@@ -39,9 +34,9 @@ abstract class Hero : Creator
             Experience = Experience - NextLevelExperience;
             Level++;
             Damage *= 1.1;
-            Console.Write($"{Name} has leveled up to {Level}!");
+            Tools.PrintBattleInfo($"{Name} has leveled up to {Level}!");
         } else {
-            Console.Write($"{Name} has {Experience}/{NextLevelExperience} experience!");
+            Tools.PrintBattleInfo($"{Name} has {Experience}/{NextLevelExperience} experience!");
         }
     }
 }

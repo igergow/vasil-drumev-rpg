@@ -4,6 +4,6 @@ class Goblin : Monster {
     {
         AttackSpeed = 2;
         Tools.PrintBattleInfo($"A new goblin has been created: {Name}");
-        Thread.Sleep(500);
+        Thread.Sleep(2000);
     }
 }

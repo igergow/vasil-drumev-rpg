@@ -4,6 +4,6 @@ class Elf : Hero {
     {
         AttackSpeed = 1.2;
         Tools.PrintBattleInfo($"A new elf has been created: {Name}");
-        Thread.Sleep(500);
+        Thread.Sleep(2000);
     }
 }

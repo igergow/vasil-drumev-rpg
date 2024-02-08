@@ -66,7 +66,8 @@ for (int i = 0; i < 10; i++)
     {
         hero.LevelUp();
         Tools.PrintBattleInfo($"{hero.Name} gained {hero.Experience}/{hero.NextLevelExperience} XP!");
-        Thread.Sleep(1000);
+        Thread.Sleep(10000);
         Tools.PrintBattleInfo($"{hero.Name} has {hero.Health} health left!");
+        Thread.Sleep(10000);
     }
 }

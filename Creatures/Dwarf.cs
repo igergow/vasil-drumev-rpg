@@ -1,12 +1,12 @@
-class Human : Hero{
-    public Human(string name)
+class Dwarf : Hero{
+    public Dwarf(string name)
     : base(name, 100, 10)
     {
-        Tools.PrintBattleInfo($"A new human has been created: {Name}");
-        Thread.Sleep(500);
+        Tools.PrintBattleInfo($"A new dwarf has been created: {Name}");
+        Thread.Sleep(2000);
     }
 
-    public void SpecialAttack(Creator opponent)
+    public void SpecialAttack(Creature opponent)
     {
         var oldHealth = opponent.Health;
         opponent.Health -= Damage;
