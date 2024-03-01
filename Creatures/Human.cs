@@ -2,8 +2,9 @@ class Human : Hero{
     public Human(string name)
     : base(name, 100, 10)
     {
+        Skills.Add(new Fireblast());
         Tools.PrintBattleInfo($"A new human has been created: {Name}");
-        Thread.Sleep(2000);
+        Thread.Sleep(500);
     }
 
     public void SpecialAttack(Creature opponent)

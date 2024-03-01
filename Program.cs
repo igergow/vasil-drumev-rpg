@@ -15,16 +15,21 @@ if (heroType == 1) {
 } else {
     hero = new Human("Човек");
 }
+
+#region "Item Sword"
 var attrs = new Dictionary<ItemAttributesEnum, object>();
-attrs.Add(ItemAttributesEnum.Damage, 10);
-attrs.Add(ItemAttributesEnum.AttackSpeed, 0.5);
+attrs.Add(ItemAttributesEnum.Damage, -2);
+attrs.Add(ItemAttributesEnum.AttackSpeed, 10d);
 attrs.Add(ItemAttributesEnum.Durability, 15);
 
-var s = new Sword("Doombringer", attrs);
+var sword = new Sword("Sword", attrs);
 
-s.Use();
+Tools.PrintBattleInfo(sword.ToString());
 
-Console.Clear();
+Thread.Sleep(2000);
+
+hero.UseItem(sword);
+#endregion
 
 for (int i = 0; i < 10; i++)
 {
@@ -59,6 +64,7 @@ for (int i = 0; i < 10; i++)
                     hero.Attack(monster);
                 }
             }
+            hero.UseSkill(hero.Skills[0], monster);
         }
         Thread.Sleep(1);
     }
